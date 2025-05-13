@@ -1,4 +1,4 @@
-from backend.app.database import Database
+from database import Database
 
 class Cancela:
     def __init__(self, id_semaforo, status, id=None):

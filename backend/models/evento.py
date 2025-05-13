@@ -1,4 +1,4 @@
-from backend.app.database import Database
+from database import Database
 
 class EventoSemaforo:
     def __init__(self, id_semaforo, tipo_evento, descricao, data_hora, id=None):

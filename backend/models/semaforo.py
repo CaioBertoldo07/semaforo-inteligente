@@ -1,4 +1,4 @@
-from app.database import Database
+from database import Database
 
 class Semaforo:
     def __init__(self, localizacao, status_atual, nivel_luminosidade, id=None):
@@ -25,7 +25,7 @@ class Semaforo:
     @staticmethod
     def selectAll():
         db = Database()
-        db.query("SELECT * FROM semaforo")
+        db.query("SELECT * FROM Semaforo")
         results = db.fetchall()
         db.close()
         return [Semaforo(**s) for s in results]

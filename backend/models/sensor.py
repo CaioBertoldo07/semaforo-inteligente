@@ -1,4 +1,4 @@
-from backend.app.database import Database
+from database import Database
 
 class Sensor:
     def __init__(self, tipo, id_semaforo, status=True, id=None):
