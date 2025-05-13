@@ -1,4 +1,4 @@
-from database import Database
+from backend.app.database import Database
 
 class LeituraSensor:
     def __init__(self, id_sensor, valor, data_hora, id=None):
